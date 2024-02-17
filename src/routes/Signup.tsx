@@ -8,6 +8,8 @@ const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
+  const isButtonDisabled = !email || !password;
+
   return (
     <div className="flex flex-col items-center justify-center h-[100vh]">
       <div className="flex items-center justify-center mb-[16px]">
@@ -48,7 +50,7 @@ const Signup = () => {
           <span className="font-[600] text-[#007DFC]">Reset Password</span>
         </p>
 
-        <Button disabled>Sign in</Button>
+        <Button disabled={isButtonDisabled}>Sign in</Button>
 
         <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[12px] text-center">
           Haven’t registered yet ?{' '}

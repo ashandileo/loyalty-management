@@ -1,5 +1,6 @@
 import { useState } from 'react';
 
+import Button from '../components/Button/Button';
 import Input from '../components/Input/Input';
 import SVGIcon from '../components/SVGIcon/SVGIcon';
 
@@ -42,9 +43,16 @@ const Signup = () => {
           onChange={(e) => setPassword(e.target.value)}
         />
 
-        <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[16px]">
+        <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[16px] mb-[48px]">
           Forgot password ?{' '}
           <span className="font-[600] text-[#007DFC]">Reset Password</span>
+        </p>
+
+        <Button>Sign in</Button>
+
+        <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[12px] text-center">
+          Haven’t registered yet ?{' '}
+          <span className="font-[600] text-[#007DFC]">Register</span>
         </p>
       </div>
     </div>

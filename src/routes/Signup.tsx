@@ -43,6 +43,7 @@ const Signup = () => {
           placeholder="Password"
           value={password}
           onChange={(e) => setPassword(e.target.value)}
+          type="password"
         />
 
         <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[16px] mb-[48px]">

@@ -3,4 +3,5 @@ export interface IInput {
   placeholder?: string;
   customClass?: string;
   onChange?: (e: React.ChangeEvent<HTMLInputElement>) => void;
+  type?: 'text' | 'password';
 }

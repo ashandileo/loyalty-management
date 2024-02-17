@@ -48,7 +48,7 @@ const Signup = () => {
           <span className="font-[600] text-[#007DFC]">Reset Password</span>
         </p>
 
-        <Button>Sign in</Button>
+        <Button disabled>Sign in</Button>
 
         <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[12px] text-center">
           Haven’t registered yet ?{' '}

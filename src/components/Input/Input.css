@@ -1,0 +1,18 @@
+.input-component {
+  transition: margin 0.3s ease;
+}
+
+.input-component:focus-within {
+  margin-top: 46px;
+}
+
+.input-component .placeholder {
+  transition:
+    top 0.3s ease,
+    left 0.3s ease;
+}
+
+.input-component input:focus + .placeholder {
+  left: 0px;
+  top: -18px;
+}

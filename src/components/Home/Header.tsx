@@ -2,7 +2,7 @@ import SVGIcon from '../shared/SVGIcon/SVGIcon';
 
 const Header = () => {
   return (
-    <div className="sticky top-[0px] z-[10] w-full">
+    <div className="relative top-[0px] z-[10] w-full">
       <div className="container mx-[auto] py-[32px] flex justify-between">
         <div className="flex items-center">
           <SVGIcon

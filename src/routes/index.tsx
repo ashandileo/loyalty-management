@@ -1,5 +1,6 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import History from './History';
 import Home from './Home';
 import Otp from './Otp';
 import Signin from './Signin';
@@ -21,6 +22,10 @@ const router = createBrowserRouter([
   {
     path: '/otp',
     element: <Otp />
+  },
+  {
+    path: '/history',
+    element: <History />
   }
 ]);
 

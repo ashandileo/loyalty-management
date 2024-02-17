@@ -2,10 +2,10 @@ import Footer from '../Footer';
 import Header from '../Header';
 import { IHomeLayout } from './Interface';
 
-const HomeLayout = ({ children }: IHomeLayout) => {
+const HomeLayout = ({ children, hideHeader = false }: IHomeLayout) => {
   return (
     <>
-      <Header />
+      {!hideHeader && <Header />}
       {children}
       <Footer />
     </>

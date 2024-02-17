@@ -5,7 +5,7 @@ import ctl from '@netlify/classnames-template-literals';
 import SVGIcon from '../SVGIcon/SVGIcon';
 import { IIconButton } from './Interface';
 
-const IconButton = ({ children, iconName }: IIconButton) => {
+const IconButton = ({ children, iconName, customClass }: IIconButton) => {
   const buttonCN = ctl(`
     border
     border-solid
@@ -20,6 +20,7 @@ const IconButton = ({ children, iconName }: IIconButton) => {
     flex
     items-center
     gap-[10px]
+    ${customClass}
   `);
 
   return (

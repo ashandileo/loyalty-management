@@ -5,7 +5,7 @@ import Button from '../components/Button/Button';
 import Input from '../components/Input/Input';
 import SVGIcon from '../components/SVGIcon/SVGIcon';
 
-const Signin = () => {
+const Signup = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -26,16 +26,27 @@ const Signin = () => {
       <div className="w-[408px] py-[32px] px-[24px]">
         <div className="text-center">
           <p className="plus-jakarta-sans font-[700] text-[29px] leading-[31.9px] mb-[8px]">
-            Let’s sign You in.
+            Create an account
           </p>
           <p className="plus-jakarta-sans font-[400] text-[14px] leading-[23.8px] text-[#9A9A9A] mb-[32px]">
-            Hey there, fabulous! Ready to kick back and explore? Just a quick
-            sign-in away from unlocking a world of fun.
+            New around here? Awesome choice! Let's make it official.
           </p>
         </div>
 
         <Input
+          placeholder="Name"
+          customClass="mb-[16px]"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <Input
           placeholder="Email"
+          customClass="mb-[16px]"
+          value={email}
+          onChange={(e) => setEmail(e.target.value)}
+        />
+        <Input
+          placeholder="Phone Number"
           customClass="mb-[16px]"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
@@ -45,21 +56,15 @@ const Signin = () => {
           value={password}
           onChange={(e) => setPassword(e.target.value)}
           type="password"
+          customClass="mb-[48px]"
         />
-
-        <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[16px] mb-[48px]">
-          Forgot password ?{' '}
-          <NavLink to="/forgot-password" className="font-[600] text-[#007DFC]">
-            Reset Password
-          </NavLink>
-        </p>
 
         <Button disabled={isButtonDisabled}>Sign in</Button>
 
         <p className="plus-jakarta-sans text-[14px] font-[400] leading-[23.8px] text-[#9A9A9A] mt-[12px] text-center">
-          Haven’t registered yet ?{' '}
-          <NavLink to="/sign-up" className="font-[600] text-[#007DFC]">
-            Register
+          Already registered yet ?{' '}
+          <NavLink to="/sign-in" className="font-[600] text-[#007DFC]">
+            Sign In
           </NavLink>
         </p>
       </div>
@@ -67,4 +72,4 @@ const Signin = () => {
   );
 };
 
-export default Signin;
+export default Signup;

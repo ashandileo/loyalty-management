@@ -1,9 +1,9 @@
 import { useState } from 'react';
 import { NavLink } from 'react-router-dom';
 
-import Button from '../components/Button/Button';
-import Input from '../components/Input/Input';
-import SVGIcon from '../components/SVGIcon/SVGIcon';
+import Button from '../components/shared/Button/Button';
+import Input from '../components/shared/Input/Input';
+import SVGIcon from '../components/shared/SVGIcon/SVGIcon';
 
 const Signin = () => {
   const [email, setEmail] = useState('');

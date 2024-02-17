@@ -1,8 +1,8 @@
 import { NavLink } from 'react-router-dom';
 
-import Button from '../components/Button/Button';
-import OtpBox from '../components/OtpBox/OtpBox';
-import SVGIcon from '../components/SVGIcon/SVGIcon';
+import Button from '../components/shared/Button/Button';
+import OtpBox from '../components/shared/OtpBox/OtpBox';
+import SVGIcon from '../components/shared/SVGIcon/SVGIcon';
 
 const Otp = () => {
   return (

@@ -1,10 +1,15 @@
 import { createBrowserRouter } from 'react-router-dom';
 
+import Home from './Home';
 import Otp from './Otp';
 import Signin from './Signin';
 import Signup from './Signup';
 
 const router = createBrowserRouter([
+  {
+    path: '/',
+    element: <Home />
+  },
   {
     path: '/sign-in',
     element: <Signin />

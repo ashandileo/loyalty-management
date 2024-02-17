@@ -4,7 +4,7 @@ import Button from '../components/Button/Button';
 import Input from '../components/Input/Input';
 import SVGIcon from '../components/SVGIcon/SVGIcon';
 
-const Signup = () => {
+const Signin = () => {
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
 
@@ -62,4 +62,4 @@ const Signup = () => {
   );
 };
 
-export default Signup;
+export default Signin;

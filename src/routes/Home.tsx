@@ -1,20 +1,19 @@
 import Banner from '../components/Home/Banner';
-import Header from '../components/Home/Header';
 import LatestPromo from '../components/Home/LatestPromo';
 import PopularMerchant from '../components/Home/PopularMerchant';
 import PopularRewards from '../components/Home/PopularRewards';
 import Preview from '../components/Home/Preview';
+import HomeLayout from '../components/Layout/HomeLayout/HomeLayout';
 
 const Home = () => {
   return (
-    <>
-      <Header />
+    <HomeLayout>
       <Banner />
       <LatestPromo />
       <PopularMerchant />
       <PopularRewards />
       <Preview />
-    </>
+    </HomeLayout>
   );
 };
 

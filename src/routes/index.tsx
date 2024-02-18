@@ -5,6 +5,7 @@ import Home from './Home';
 import Otp from './Otp';
 import Signin from './Signin';
 import Signup from './Signup';
+import Voucher from './Voucher';
 
 const router = createBrowserRouter([
   {
@@ -26,6 +27,10 @@ const router = createBrowserRouter([
   {
     path: '/history',
     element: <History />
+  },
+  {
+    path: '/voucher/:voucherId',
+    element: <Voucher />
   }
 ]);
 

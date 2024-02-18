@@ -1,5 +1,3 @@
-import React from 'react';
-
 import popularMerchants from '../../fixtures/popular-merchants';
 
 const PopularMerchant = () => {

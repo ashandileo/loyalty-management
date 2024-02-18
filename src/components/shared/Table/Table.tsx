@@ -1,4 +1,4 @@
-import React from 'react';
+import ctl from '@netlify/classnames-template-literals';
 
 import SVGIcon from '../SVGIcon/SVGIcon';
 
@@ -15,10 +15,16 @@ const RowHeader = ({ children }: any) => {
 };
 
 const ColumnHeader = ({ widthClass, children, withSort, grow }: any) => {
+  const columnHeaderCN = ctl(`
+    flex
+    py-[12px]
+    px-[24px]
+    ${widthClass}
+    ${grow && 'flex-grow'}
+  `);
+
   return (
-    <div
-      className={`flex py-[12px] px-[24px] ${widthClass} ${grow ? 'flex-grow' : ''}`}
-    >
+    <div className={columnHeaderCN}>
       <div className="flex items-center">
         <p className="figtree font-[500] text-[14px] leading-[18px] text-[#667085]">
           {children}
@@ -45,13 +51,17 @@ const Row = ({ children }: any) => {
 };
 
 const Column = ({ children, grow, widthClass }: any) => {
-  return (
-    <div
-      className={`flex items-center ${widthClass} ${grow ? 'flex-grow' : ''} h-[72px] px-[24px] py-[16px]`}
-    >
-      {children}
-    </div>
-  );
+  const columnCN = ctl(`
+    flex
+    items-center
+    h-[72px]
+    px-[24px]
+    py-[16px]
+    ${widthClass}
+    ${grow && 'flex-grow'}
+  `);
+
+  return <div className={columnCN}>{children}</div>;
 };
 
 Table.RowHeader = RowHeader;

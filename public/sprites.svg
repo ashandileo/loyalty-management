@@ -47,6 +47,12 @@
     <path fill="none" stroke="#667085" style="stroke: var(--color1, #667085)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M11.997 2.667v18.667M11.997 21.333l9.333-9.333M11.997 21.333l-9.333-9.333"></path>
   </symbol>
 
+  <symbol id="icon-more-vertical" viewBox="0 0 24 24">
+    <path fill="none" stroke="#98a2b3" style="stroke: var(--color3, #98a2b3)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M12.002 13c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+    <path fill="none" stroke="#98a2b3" style="stroke: var(--color3, #98a2b3)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M12.002 6c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+    <path fill="none" stroke="#98a2b3" style="stroke: var(--color3, #98a2b3)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2" d="M12.002 20c0.552 0 1-0.448 1-1s-0.448-1-1-1c-0.552 0-1 0.448-1 1s0.448 1 1 1z"></path>
+</symbol>
+
   <!-- Add more symbols for each icon you want to include -->
 
 </svg>

@@ -4,4 +4,6 @@ export interface IBadge {
   isActive?: boolean;
   id: string;
   onClick?: (id: string) => void;
+  variant?: 'basic' | 'success';
+  customTextClass?: string;
 }

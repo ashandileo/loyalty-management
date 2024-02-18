@@ -1,12 +1,12 @@
-import React from 'react';
-
+import Badge from '../shared/Badge/Badge';
 import SVGIcon from '../shared/SVGIcon/SVGIcon';
+import Table from '../shared/Table/Table';
 
 const headers = [
   {
     name: 'Merchant',
     withSort: true,
-    widthClass: 'flex-grow'
+    grow: true
   },
   {
     name: 'Date',
@@ -33,28 +33,58 @@ const headers = [
 const TableHistory = () => {
   return (
     <div className="mx-[-24px]">
-      <div className="flex items-center bg-[#F9FAFB]">
-        {headers.map((header, index) => (
-          <div
-            className={`flex py-[12px] px-[24px] ${header.widthClass}`}
-            key={index}
-          >
+      <Table>
+        <Table.RowHeader>
+          {headers.map((header, index) => (
+            <Table.ColumnHeader
+              key={index}
+              widthClass={header.widthClass}
+              withSort={header.withSort}
+              grow={header.grow}
+            >
+              {header.name}
+            </Table.ColumnHeader>
+          ))}
+        </Table.RowHeader>
+        <Table.Row>
+          <Table.Column grow>
             <div className="flex items-center">
-              <p className="figtree font-[500] text-[14px] leading-[18px] text-[#667085]">
-                {header.name}
-              </p>
-              {header.withSort && (
-                <SVGIcon
-                  name="icon-arrow-down-2"
-                  width={12}
-                  height={12}
-                  className="ml-[4px]"
-                />
-              )}
+              <img
+                src="/images/starbucks.svg"
+                className="w-[40px] h-[40px] mr-[12px]"
+                alt="Starbucks"
+              />
+              <p>Starbucks</p>
             </div>
-          </div>
-        ))}
-      </div>
+          </Table.Column>
+          <Table.Column widthClass="w-[264px]">
+            <p className="figtree font-[400] text-[14px] leading-[20px]">
+              25 December 2023
+            </p>
+          </Table.Column>
+          <Table.Column widthClass="w-[102px]">
+            <p className="figtree font-[400] text-[14px] leading-[20px]">
+              10:24
+            </p>
+          </Table.Column>
+          <Table.Column widthClass="w-[156px]">
+            <Badge
+              text="+50 Point"
+              id="badge-1"
+              variant="success"
+              customTextClass="figtree !leading-[20px]"
+            />
+          </Table.Column>
+          <Table.Column widthClass="w-[72px]">
+            <SVGIcon
+              name="icon-more-vertical"
+              width={20}
+              height={20}
+              className="cursor-pointer"
+            />
+          </Table.Column>
+        </Table.Row>
+      </Table>
     </div>
   );
 };

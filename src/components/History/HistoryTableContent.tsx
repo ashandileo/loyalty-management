@@ -1,12 +1,13 @@
 import React from 'react';
 
 import FilterHistory from './FilterHistory';
+import TableHistory from './TableHistory';
 
 const HistoryTableContent = () => {
   return (
     <div className="container mx-[auto]">
       <div className="bg-white py-[20px] px-[24px] rounded-[12px] border border-solid border-[#EAECF0] shadow-sm">
-        <div className="flex items-center justify-between">
+        <div className="flex items-center justify-between mb-[18px]">
           <div>
             <p className="plus-jakarta-sans font-[500] text-[18px] leading-[28px] text-[#101828] mb-[4px]">
               Company List Lorem Ipsum
@@ -17,6 +18,7 @@ const HistoryTableContent = () => {
           </div>
           <FilterHistory />
         </div>
+        <TableHistory />
       </div>
     </div>
   );

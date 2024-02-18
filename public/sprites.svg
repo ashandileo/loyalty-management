@@ -43,6 +43,10 @@
     <path fill="#666e7d" style="fill: var(--color1, #666e7d)" opacity="0.5" d="M2.667 10.667c0-4.412 3.588-8 8-8s8 3.588 8 8c0 4.412-3.588 8-8 8s-8-3.588-8-8zM23.609 21.724l-4.527-4.528c1.404-1.805 2.251-4.068 2.251-6.529 0-5.881-4.785-10.667-10.667-10.667s-10.667 4.785-10.667 10.667c0 5.881 4.785 10.667 10.667 10.667 2.461 0 4.724-0.847 6.529-2.251l4.528 4.527c0.26 0.26 0.601 0.391 0.943 0.391s0.683-0.131 0.943-0.391c0.521-0.521 0.521-1.364 0-1.885z"></path>
   </symbol>
 
+  <symbol id="icon-arrow-down-2">
+    <path fill="none" stroke="#667085" style="stroke: var(--color1, #667085)" stroke-linejoin="round" stroke-linecap="round" stroke-miterlimit="4" stroke-width="2.6667" d="M11.997 2.667v18.667M11.997 21.333l9.333-9.333M11.997 21.333l-9.333-9.333"></path>
+  </symbol>
+
   <!-- Add more symbols for each icon you want to include -->
 
 </svg>

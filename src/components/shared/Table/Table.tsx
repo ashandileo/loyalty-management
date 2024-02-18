@@ -3,7 +3,7 @@ import React from 'react';
 import SVGIcon from '../SVGIcon/SVGIcon';
 
 const Table = ({ children }: any) => {
-  return <div className="w-full">{children}</div>;
+  return <div className="w-full overflow-auto">{children}</div>;
 };
 
 const RowHeader = ({ children }: any) => {
@@ -38,7 +38,7 @@ const ColumnHeader = ({ widthClass, children, withSort, grow }: any) => {
 
 const Row = ({ children }: any) => {
   return (
-    <div className="flex items-center border-0 border-b border-solid border-[#EAECF0]">
+    <div className="flex items-center border-0 border-b border-solid border-[#EAECF0] hover:bg-gray-50">
       {children}
     </div>
   );

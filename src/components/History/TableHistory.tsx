@@ -3,6 +3,7 @@ import historyHeaders from '../../fixtures/history-headers';
 import Badge from '../shared/Badge/Badge';
 import SVGIcon from '../shared/SVGIcon/SVGIcon';
 import Table from '../shared/Table/Table';
+import TablePagination from './TablePagination';
 
 const TableHistory = () => {
   return (
@@ -63,6 +64,8 @@ const TableHistory = () => {
           </Table.Row>
         ))}
       </Table>
+
+      <TablePagination />
     </div>
   );
 };

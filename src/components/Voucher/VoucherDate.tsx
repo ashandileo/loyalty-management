@@ -2,7 +2,7 @@ import SVGIcon from '../shared/SVGIcon/SVGIcon';
 
 const VoucherDate = () => {
   return (
-    <div className="mt-[16px] flex items-center">
+    <div className="mt-[16px] flex items-center mb-[16px]">
       <div className="w-[40px] h-[40px] bg-[#FAFAFA] flex items-center justify-center rounded-[8px] mr-[12px]">
         <SVGIcon name="icon-calendar" width={20} height={20} />
       </div>

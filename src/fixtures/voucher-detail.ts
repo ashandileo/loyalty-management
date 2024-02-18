@@ -21,6 +21,26 @@ const voucherDetail = {
       subTitle:
         'Use the BOGO voucher to explore a variety of flavors and beverages. Try a different coffee blend, experiment with various syrups, or opt for a seasonal specialty drink. This promotion encourages customers to broaden their taste preferences'
     }
+  ],
+  guide: [
+    {
+      title: 'Visit Starbucks:',
+      subTitle: 'Swing by any participating Starbucks store.'
+    },
+    {
+      title: 'Order Your Favorite:',
+      subTitle: 'Choose your go-to handcrafted beverage from the menu.'
+    },
+    {
+      title: 'Mention BOGO at Checkout:',
+      subTitle:
+        "Inform the barista you're here for the Buy One Get One deal when placing your order."
+    },
+    {
+      title: 'Enjoy the Extra Treat:',
+      subTitle:
+        'Pay for one drink and savor a second one for free. Limited time only, so seize the moment!'
+    }
   ]
 };
 

@@ -1,12 +1,13 @@
 import ctl from '@netlify/classnames-template-literals';
 
 import SVGIcon from '../SVGIcon/SVGIcon';
+import { IColumn, IColumnHeader, IRow, IRowHeader, ITable } from './Interface';
 
-const Table = ({ children }: any) => {
+const Table = ({ children }: ITable) => {
   return <div className="w-full overflow-auto">{children}</div>;
 };
 
-const RowHeader = ({ children }: any) => {
+const RowHeader = ({ children }: IRowHeader) => {
   return (
     <div className="flex items-center bg-[#F9FAFB] border-0 border-b border-solid border-[#EAECF0]">
       {children}
@@ -14,7 +15,12 @@ const RowHeader = ({ children }: any) => {
   );
 };
 
-const ColumnHeader = ({ widthClass, children, withSort, grow }: any) => {
+const ColumnHeader = ({
+  widthClass,
+  children,
+  withSort,
+  grow
+}: IColumnHeader) => {
   const columnHeaderCN = ctl(`
     flex
     py-[12px]
@@ -42,7 +48,7 @@ const ColumnHeader = ({ widthClass, children, withSort, grow }: any) => {
   );
 };
 
-const Row = ({ children }: any) => {
+const Row = ({ children }: IRow) => {
   return (
     <div className="flex items-center border-0 border-b border-solid border-[#EAECF0] hover:bg-gray-50">
       {children}
@@ -50,7 +56,7 @@ const Row = ({ children }: any) => {
   );
 };
 
-const Column = ({ children, grow, widthClass }: any) => {
+const Column = ({ children, grow, widthClass }: IColumn) => {
   const columnCN = ctl(`
     flex
     items-center

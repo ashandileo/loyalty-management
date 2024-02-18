@@ -1,3 +1,4 @@
+import VoucherDate from './VoucherDate';
 import VoucherName from './VoucherName';
 
 const VoucherDetail = () => {
@@ -5,6 +6,7 @@ const VoucherDetail = () => {
     <div className="w-full bg-[#F9F9F9] pb-[100px]">
       <div className="w-[994px] h-[300px] bg-white mx-[auto] mt-[-240px] relative z-[1] rounded-[20px] p-[24px]">
         <VoucherName />
+        <VoucherDate />
       </div>
     </div>
   );

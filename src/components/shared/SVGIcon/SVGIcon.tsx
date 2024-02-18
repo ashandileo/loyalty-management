@@ -8,7 +8,7 @@ const SVGIcon = ({ name, className, width, height }: ISVGIcon) => {
       height={height}
       viewBox="0 0 24 24"
     >
-      <use href={`sprites.svg#${name}`} />
+      <use href={`/sprites.svg#${name}`} />
     </svg>
   );
 };

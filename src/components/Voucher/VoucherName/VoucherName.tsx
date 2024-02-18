@@ -1,6 +1,11 @@
-import Divider from '../shared/Divider/Divider';
+import Divider from '../../shared/Divider/Divider';
+import { IVoucherName } from './Interface';
 
-const VoucherName = () => {
+const VoucherName = ({
+  merchantLogo,
+  merchantName,
+  voucherName
+}: IVoucherName) => {
   return (
     <>
       <div className="flex items-center mb-[8px]">

@@ -1,6 +1,7 @@
-import SVGIcon from '../shared/SVGIcon/SVGIcon';
+import SVGIcon from '../../shared/SVGIcon/SVGIcon';
+import { IVoucherDate } from './Interface';
 
-const VoucherDate = () => {
+const VoucherDate = ({ expireDate }: IVoucherDate) => {
   return (
     <div className="mt-[16px] flex items-center mb-[16px]">
       <div className="w-[40px] h-[40px] bg-[#FAFAFA] flex items-center justify-center rounded-[8px] mr-[12px]">
@@ -11,7 +12,7 @@ const VoucherDate = () => {
           Expiry date
         </p>
         <p className="plus-jakarta-sans font-[500] text-[12px] leading-[20.4px] text-[#272A2D]">
-          30 Februray 2024 - 07 March 2024
+          {expireDate}
         </p>
       </div>
     </div>

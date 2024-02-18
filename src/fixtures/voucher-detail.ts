@@ -41,6 +41,12 @@ const voucherDetail = {
       subTitle:
         'Pay for one drink and savor a second one for free. Limited time only, so seize the moment!'
     }
+  ],
+  termCondition: [
+    'This promotion is valid for a limited time only and is subject to change without notice.',
+    'To avail of the Buy One Get One (BOGO) offer, customers must purchase a qualifying beverage at the regular price to receive a second beverage of equal or lesser value at no additional cost.',
+    'The BOGO offer is applicable to select handcrafted beverages and sizes, as determined by Starbucks. Exclusions may apply.',
+    'This promotion is valid at participating Starbucks stores only. Please check with your local store to confirm participation.'
   ]
 };
 

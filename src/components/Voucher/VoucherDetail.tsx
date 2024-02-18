@@ -4,6 +4,7 @@ import VoucherDate from './VoucherDate/VoucherDate';
 import VoucherDescription from './VoucherDescription/VoucherDescription';
 import VoucherGuide from './VoucherGuide/VoucherGuide';
 import VoucherName from './VoucherName/VoucherName';
+import VoucherTermCondition from './VoucherTermCondition/VoucherTermCondition';
 
 const VoucherDetail = () => {
   const {
@@ -13,7 +14,8 @@ const VoucherDetail = () => {
     expireDate,
     description,
     benefit,
-    guide
+    guide,
+    termCondition
   } = voucherDetailData;
 
   return (
@@ -28,6 +30,7 @@ const VoucherDetail = () => {
         <VoucherDescription description={description} />
         <VoucherBenefit benefit={benefit} />
         <VoucherGuide guide={guide} />
+        <VoucherTermCondition termCondition={termCondition} />
       </div>
     </div>
   );

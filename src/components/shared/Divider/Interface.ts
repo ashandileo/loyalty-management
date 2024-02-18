@@ -1,3 +1,3 @@
 export interface IDivider {
-  colorClass?: string;
+  borderStyle?: 'border-solid' | 'border-dashed';
 }

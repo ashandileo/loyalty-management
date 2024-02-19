@@ -1,8 +1,8 @@
-import React from 'react';
+import Slider from '../shared/Slider/Slider';
 
 const LatestPromo = () => {
   return (
-    <div className="mt-[-300px] bg-gray-100 pt-[200px] pb-[40px]">
+    <div className="mt-[-300px] bg-gray-100 pt-[200px] pb-[100px]">
       <div className="container mx-[auto] mt-[50px]">
         <h1 className="plus-jakarta-sans font-[700] text-[32px] leading-[35.2px] text-[#272A2D] mb-[8px]">
           Latest Promo 🔥
@@ -13,7 +13,7 @@ const LatestPromo = () => {
       </div>
 
       <div className="container mx-[auto] mt-[30px]">
-        Latest Promo Image ....
+        <Slider />
       </div>
     </div>
   );

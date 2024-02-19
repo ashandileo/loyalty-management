@@ -20,9 +20,9 @@ const Badge = ({
     group
     cursor-pointer
     flex items-center
-    ${variant === 'basic' && 'bg-[#F6F7FB] hover:bg-[#0074E0]'}
+    ${variant === 'basic' && !isActive && 'bg-[#F6F7FB] hover:bg-[#0074E0]'}
     ${variant === 'success' && 'bg-[#F0FAF3]'}
-    ${isActive && 'bg-[#0074E0]'}
+    ${isActive && variant === 'basic' && 'bg-[#0074E0]'}
   `);
 
   const badgeTextCN = ctl(`

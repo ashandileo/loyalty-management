@@ -2,7 +2,7 @@ import Slider from '../shared/Slider/Slider';
 
 const Promo = () => {
   return (
-    <div className="w-full mt-[60px]">
+    <div className="w-full mt-[60px]" id="another-promo">
       <div className="w-[994px] mx-[auto]">
         <p className="plus-jakarta-sans font-[700] text-[32px] leading-[35.2px] text-[#272A2D] mb-[8px]">
           Promo you might like

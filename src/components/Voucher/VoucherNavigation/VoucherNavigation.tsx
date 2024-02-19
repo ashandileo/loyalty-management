@@ -1,11 +1,11 @@
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 
 const listHeader = [
-  'General',
-  'Benefit',
-  'How to Get',
-  'Terms and Condition',
-  'Another Promo'
+  { id: 'general', name: 'General' },
+  { id: 'benefit', name: 'Benefit' },
+  { id: 'how-to-get', name: 'How to Get' },
+  { id: 'terms-and-condition', name: 'Terms and Condition' },
+  { id: 'another-promo', name: 'Another Promo' }
 ];
 
 const VoucherNavigation = () => {
@@ -36,7 +36,16 @@ const VoucherNavigation = () => {
     scrollPosition
   });
 
-  // if (!showComponent) return null;
+  const handleScroll = (id: string) => {
+    const element = document.getElementById(id);
+    if (element) {
+      window.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+    setActive(id);
+  };
 
   return (
     <div
@@ -46,12 +55,13 @@ const VoucherNavigation = () => {
         <div className="flex items-center gap-[16px]">
           {listHeader.map((header) => (
             <div
-              className={`py-[10px] px-[20px] border-0 border-b-[3px] hover:border-[#0074E0] ${active === header ? 'border-[#0074E0]' : 'border-transparent'} group cursor-pointer`}
+              className={`py-[10px] px-[20px] border-0 border-b-[3px] hover:border-[#0074E0] ${active === header.id ? 'border-[#0074E0]' : 'border-transparent'} group cursor-pointer`}
+              onClick={() => handleScroll(header.id)}
             >
               <p
-                className={`plus-jakarta-sans text-[16px] leading-[27.2px] group-hover:text-[#0074E0] group-hover:font-[600] ${active === header ? 'text-[#0074E0] font-[600]' : 'text-[#BCBCBC] font-[400]'}`}
+                className={`plus-jakarta-sans text-[16px] leading-[27.2px] group-hover:text-[#0074E0] group-hover:font-[600] ${active === header.id ? 'text-[#0074E0] font-[600]' : 'text-[#BCBCBC] font-[400]'}`}
               >
-                {header}
+                {header.name}
               </p>
             </div>
           ))}

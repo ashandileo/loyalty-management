@@ -2,7 +2,7 @@ import { IVoucherBenefit } from './Interface';
 
 const VoucherBenefit = ({ benefit }: IVoucherBenefit) => {
   return (
-    <div className="mt-[32px]">
+    <div className="mt-[32px]" id="benefit">
       <p className="plus-jakarta-sans font-[700] text-[16px] leading-[24px] text-[#272A2D] mb-[12px]">
         Benefit
       </p>

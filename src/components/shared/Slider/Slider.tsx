@@ -1,14 +1,14 @@
-import React from 'react';
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
 
 import SVGIcon from '../SVGIcon/SVGIcon';
+import { ISlider } from './Interface';
 import './Slider.css';
 
 const Slider = ({
   minWidthClass = 'min-w-[635px]',
   minHeightClass = 'h-[311px]'
-}: any) => {
+}: ISlider) => {
   const images = [
     {
       id: '102',

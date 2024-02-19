@@ -20,6 +20,7 @@ Make sure you have Node.js and npm installed before running this project.
 Here are some key features available in the project:
 
 - Sign in page
+  ![Project Preview](/public/images/sign-in.png)
 - Sign up page
 - OTP Page
 - Home Page

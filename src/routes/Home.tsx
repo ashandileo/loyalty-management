@@ -4,15 +4,18 @@ import PopularMerchant from '../components/Home/PopularMerchant';
 import PopularRewards from '../components/Home/PopularRewards';
 import Preview from '../components/Home/Preview';
 import HomeLayout from '../components/Layout/HomeLayout/HomeLayout';
+import AnimatePage from '../components/shared/AnimatePage/AnimatePage';
 
 const Home = () => {
   return (
     <HomeLayout>
-      <Banner />
-      <LatestPromo />
-      <PopularMerchant />
-      <PopularRewards />
-      <Preview />
+      <AnimatePage>
+        <Banner />
+        <LatestPromo />
+        <PopularMerchant />
+        <PopularRewards />
+        <Preview />
+      </AnimatePage>
     </HomeLayout>
   );
 };

@@ -42,6 +42,7 @@ Here are some key features available in the project:
 - React Slider Caraousel
 - React Router
 - React Hooks
+- Framer Motion
 
 ## Project Structure
 

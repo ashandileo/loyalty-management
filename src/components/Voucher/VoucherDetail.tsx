@@ -19,7 +19,7 @@ const VoucherDetail = () => {
   } = voucherDetailData;
 
   return (
-    <div className="w-full bg-[#F9F9F9] pb-[100px]">
+    <div className="w-full">
       <div className="w-[994px] bg-white mx-[auto] mt-[-240px] relative z-[1] rounded-[20px] p-[24px]">
         <VoucherName
           merchantLogo={merchantLogo}

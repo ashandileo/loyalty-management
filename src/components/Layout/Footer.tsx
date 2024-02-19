@@ -65,10 +65,10 @@ const Footer = () => {
                   alt="Google Play Logo"
                 />
                 <div className="ml-[4px]">
-                  <p className="plus-jakarta-sans font-[400] text-[10px] text-[#090909] leading-[6px]">
+                  <p className="plus-jakarta-sans font-[400] text-[10px] text-[#090909] leading-[6px] whitespace-nowrap">
                     GET IT ON
                   </p>
-                  <p className="plus-jakarta-sans font-[600] text-[18px] text-[#090909]">
+                  <p className="plus-jakarta-sans font-[600] text-[18px] text-[#090909] whitespace-nowrap">
                     Google Play
                   </p>
                 </div>
@@ -81,10 +81,10 @@ const Footer = () => {
                   alt="Apple Logo"
                 />
                 <div className="ml-[4px]">
-                  <p className="plus-jakarta-sans font-[400] text-[10px] text-[#090909] leading-[6px]">
+                  <p className="plus-jakarta-sans font-[400] text-[10px] text-[#090909] leading-[6px] whitespace-nowrap">
                     Download on the
                   </p>
-                  <p className="plus-jakarta-sans font-[600] text-[18px] text-[#090909]">
+                  <p className="plus-jakarta-sans font-[600] text-[18px] text-[#090909] whitespace-nowrap">
                     App Store
                   </p>
                 </div>

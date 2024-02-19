@@ -4,7 +4,7 @@ import HomeLayout from '../components/Layout/HomeLayout/HomeLayout';
 
 const History = () => {
   return (
-    <HomeLayout hideHeader>
+    <HomeLayout lightHeader>
       <div className="pb-[108px] pt-[60px]">
         <TopContent />
         <HistoryTableContent />

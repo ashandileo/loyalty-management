@@ -1,11 +1,11 @@
 import Footer from '../Footer';
-import Header from '../Header';
+import Header from '../Header/Header';
 import { IHomeLayout } from './Interface';
 
-const HomeLayout = ({ children, hideHeader = false }: IHomeLayout) => {
+const HomeLayout = ({ children, hideHeader, lightHeader }: IHomeLayout) => {
   return (
     <>
-      {!hideHeader && <Header />}
+      {!hideHeader && <Header lightHeader={lightHeader} />}
       {children}
       <Footer />
     </>

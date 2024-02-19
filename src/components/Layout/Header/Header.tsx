@@ -1,13 +1,23 @@
-import SVGIcon from '../shared/SVGIcon/SVGIcon';
+import SVGIcon from '../../shared/SVGIcon/SVGIcon';
+import { IHeader } from './Interface';
 
-const listHeader = [
-  { icon: 'icon-home', name: 'Home' },
-  { icon: 'icon-calendar-2', name: 'History' },
-  { icon: 'icon-message', name: 'Inbox' },
-  { icon: 'icon-profile', name: 'Profile' }
-];
+const Header = ({ lightHeader }: IHeader) => {
+  const listHeader = [
+    { icon: lightHeader ? 'icon-home-black' : 'icon-home', name: 'Home' },
+    {
+      icon: lightHeader ? 'icon-calendar-black' : 'icon-calendar-2',
+      name: 'History'
+    },
+    {
+      icon: lightHeader ? 'icon-message-black' : 'icon-message',
+      name: 'Inbox'
+    },
+    {
+      icon: lightHeader ? 'icon-profile-black' : 'icon-profile',
+      name: 'Profile'
+    }
+  ];
 
-const Header = () => {
   return (
     <div className="relative top-[0px] z-[10] w-full">
       <div className="container mx-[auto] py-[32px] flex justify-between">
@@ -18,7 +28,9 @@ const Header = () => {
             height={26}
             className="mr-[12px]"
           />
-          <p className="text-white font-[700] text-[30.5px] leading-[33.55px]">
+          <p
+            className={`${lightHeader ? 'text-[#272A2D]' : 'text-white'} font-[700] text-[30.5px] leading-[33.55px]`}
+          >
             Loyauté
           </p>
         </div>
@@ -30,7 +42,9 @@ const Header = () => {
               className="flex items-center justify-center flex-col"
             >
               <SVGIcon name={header.icon} width={24} height={24} />
-              <p className="plus-jakarta-sans  font-[600] text-[14px] leading-[23.1px] text-white">
+              <p
+                className={`plus-jakarta-sans text-[14px] leading-[23.1px] ${lightHeader ? 'text-[#272A2D] font-[400]' : 'text-white font-[600]'}`}
+              >
                 {header.name}
               </p>
             </div>
@@ -39,16 +53,20 @@ const Header = () => {
 
         <div className="flex items-center">
           <SVGIcon
-            name="icon-notification"
+            name={lightHeader ? 'icon-notification-black' : 'icon-notification'}
             width={28}
             height={28}
             className="mr-[32px]"
           />
           <div className="flex flex-col items-end mr-[14px]">
-            <p className="plus-jakarta-sans font-[400] text-[12px] leading-[20.4px] text-white mb-[2px]">
+            <p
+              className={`plus-jakarta-sans font-[400] text-[12px] leading-[20.4px] ${lightHeader ? 'text-[#272A2D]' : 'text-white'} mb-[2px]`}
+            >
               Good morning,
             </p>
-            <p className="plus-jakarta-sans font-[700] text-[20px] leading-[22px] text-white">
+            <p
+              className={`plus-jakarta-sans font-[700] text-[20px] leading-[22px] ${lightHeader ? 'text-[#272A2D]' : 'text-white'}`}
+            >
               Johan Doe
             </p>
           </div>

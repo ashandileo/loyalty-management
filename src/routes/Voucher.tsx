@@ -5,7 +5,7 @@ import VoucherDetail from '../components/Voucher/VoucherDetail';
 
 const Voucher = () => {
   return (
-    <HomeLayout hideHeader>
+    <HomeLayout lightHeader>
       <div className="bg-[#F9F9F9] pb-[100px]">
         <Banner />
         <VoucherDetail />

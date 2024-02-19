@@ -2,6 +2,10 @@
 
 Loyalty Management
 
+## Live Demo
+
+[Live Demo](https://loyalty-management-ten.vercel.app/)
+
 ## Installation
 
 Make sure you have Node.js and npm installed before running this project.

@@ -19,12 +19,16 @@ Make sure you have Node.js and npm installed before running this project.
 
 Here are some key features available in the project:
 
-- Sign in page
+- Sign in page: /sign-in
   ![Project Preview](/public/images/sign-in.png)
-- Sign up page
-- OTP Page
-- Home Page
-- Voucher Detail Page
+- Sign up page: /sign-up
+  ![Project Preview](/public/images/sign-up.png)
+- OTP Page: /otp
+  ![Project Preview](/public/images/otp.png)
+- Home Page: /
+  ![Project Preview](/public/images/home.png)
+- Voucher Detail Page: /voucher/1
+  ![Project Preview](/public/images/voucher-detail.png)
 
 ## Tech Stack
 

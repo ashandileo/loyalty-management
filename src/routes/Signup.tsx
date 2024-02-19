@@ -6,7 +6,9 @@ import Input from '../components/shared/Input/Input';
 import SVGIcon from '../components/shared/SVGIcon/SVGIcon';
 
 const Signup = () => {
+  const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [phoneNumber, setPhoneNumber] = useState('');
   const [password, setPassword] = useState('');
 
   const isButtonDisabled = !email || !password;
@@ -36,8 +38,8 @@ const Signup = () => {
         <Input
           placeholder="Name"
           customClass="mb-[16px]"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={name}
+          onChange={(e) => setName(e.target.value)}
         />
         <Input
           placeholder="Email"
@@ -48,8 +50,8 @@ const Signup = () => {
         <Input
           placeholder="Phone Number"
           customClass="mb-[16px]"
-          value={email}
-          onChange={(e) => setEmail(e.target.value)}
+          value={phoneNumber}
+          onChange={(e) => setPhoneNumber(e.target.value)}
         />
         <Input
           placeholder="Password"

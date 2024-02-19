@@ -13,7 +13,7 @@ const LatestPromo = () => {
       </div>
 
       <div className="container mx-[auto] mt-[30px]">
-        <Slider />
+        <Slider minWidthClass="min-w-[898px]" minHeightClass="min-w-[440px]" />
       </div>
     </div>
   );

@@ -5,7 +5,10 @@ import 'react-responsive-carousel/lib/styles/carousel.min.css';
 import SVGIcon from '../SVGIcon/SVGIcon';
 import './Slider.css';
 
-const Slider = () => {
+const Slider = ({
+  minWidthClass = 'min-w-[635px]',
+  minHeightClass = 'h-[311px]'
+}: any) => {
   const images = [
     {
       id: '102',
@@ -14,6 +17,26 @@ const Slider = () => {
     },
     {
       id: '103',
+      url: '/images/starbucks-promo.svg',
+      alt: 'Starbucks Promo'
+    },
+    {
+      id: '104',
+      url: '/images/starbucks-promo.svg',
+      alt: 'Starbucks Promo'
+    },
+    {
+      id: '104',
+      url: '/images/starbucks-promo.svg',
+      alt: 'Starbucks Promo'
+    },
+    {
+      id: '104',
+      url: '/images/starbucks-promo.svg',
+      alt: 'Starbucks Promo'
+    },
+    {
+      id: '104',
       url: '/images/starbucks-promo.svg',
       alt: 'Starbucks Promo'
     },
@@ -69,7 +92,9 @@ const Slider = () => {
       }
     >
       {images.map((image) => (
-        <div className="min-w-[635px] h-[311px]">
+        <div
+          className={`${minWidthClass} ${minHeightClass} overflow-hidden rounded-[12px]`}
+        >
           <img src={image.url} alt={image.alt} />
         </div>
       ))}

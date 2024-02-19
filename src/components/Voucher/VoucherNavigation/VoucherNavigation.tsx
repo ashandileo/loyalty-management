@@ -12,7 +12,7 @@ const VoucherNavigation = () => {
   const [showComponent, setShowComponent] = useState(false);
   const [scrollPosition, setScrollPosition] = useState(0);
 
-  const [active, setActive] = useState('General');
+  const [active, setActive] = useState('general');
 
   useEffect(() => {
     const handleScroll = () => {

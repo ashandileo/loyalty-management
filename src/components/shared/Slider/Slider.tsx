@@ -1,5 +1,6 @@
 import { Carousel } from 'react-responsive-carousel';
 import 'react-responsive-carousel/lib/styles/carousel.min.css';
+import { Link } from 'react-router-dom';
 
 import SVGIcon from '../SVGIcon/SVGIcon';
 import { ISlider } from './Interface';
@@ -92,11 +93,13 @@ const Slider = ({
       }
     >
       {images.map((image) => (
-        <div
-          className={`${minWidthClass} ${minHeightClass} overflow-hidden rounded-[12px]`}
-        >
-          <img src={image.url} alt={image.alt} />
-        </div>
+        <Link to="/voucher/1">
+          <div
+            className={`${minWidthClass} ${minHeightClass} overflow-hidden rounded-[12px]`}
+          >
+            <img src={image.url} alt={image.alt} />
+          </div>
+        </Link>
       ))}
     </Carousel>
   );

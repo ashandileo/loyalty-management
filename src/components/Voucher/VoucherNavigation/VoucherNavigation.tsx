@@ -31,11 +31,6 @@ const VoucherNavigation = () => {
     setShowComponent(scrollPosition > 100);
   }, [scrollPosition]);
 
-  console.log({
-    showComponent,
-    scrollPosition
-  });
-
   const handleScroll = (id: string) => {
     const element = document.getElementById(id);
     if (element) {
